@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>botines</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">Adiddos</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class='bx bx-user'></i></a></li>
+                    <li id="cartButton">
+                        <a href="#">
+                            <i class='bx bx-shopping-bag'></i>
+                            <span class="cartCount" id="cartCount">0</span>
+                        </a>
+                        
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section class="hero">
+            <img src="img/banner.png" alt="Banner">
+        </section>
+
+        <section class="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="product-grid">
+                <div class="product-card" id="product1">
+                    <img src="./imagenes/nike tempo.webp" alt="">
+                    <h3>Nike Tiempo</h3>
+                    <p>$150.000</p>
+                    <button data-title="Nike Tiempo" data-price="150000" class="add-to-cart-button btn-primary">Agregar al Carrito</button>
+                </div>
+                <div class="product-card" id="product2">
+                    <img src="./imagenes/Nike Mercurial Vapor 16 Club TF.webp" alt="">
+                    <h3>Nike Mercurial Vapor 16 Club TF</h3>
+                    <p>$139.999</p>
+                    <button data-title="Nike Mercurial Vapor 16 Club TF" data-price="139999" class="add-to-cart-button btn-primary">Agregar al Carrito</button>
+                </div>
+                <div class="product-card" id="product1">
+                    <img src="./imagenes/predator.webp" alt="">
+                    <h3>adiddas predator</h3>
+                    <p>$200.000</p>
+                    <button data-title="Adidas predator" data-price="200000" class="add-to-cart-button btn-primary">Agregar al Carrito</button>
+                </div>
+                <div class="product-card" id="product2">
+                    <img src="./imagenes/addias x.webp" alt="">
+                    <h3>Adidas X</h3>
+                    <p>$120.000</p>
+                    <button data-title="adiddas X" data-price="120000" class="add-to-cart-button btn-primary">Agregar al Carrito</button>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" id="product1">
+                    <img src="./imagenes/addias f50.webp" alt="">
+                    <h3>Adidas F50 Club TF:</h3>
+                    <p>$300.000</p>
+                    <button data-title="Adidas f50 Club TF" data-price="300000" class="add-to-cart-button btn-primary">Agregar al Carrito</button>
+                </div>
+                <div class="product-card" id="product2">
+                    <img src="./imagenes/adiddas copa.webp" alt="">
+                    <h3>adiddas copa</h3>
+                    <p>$164.999</p>
+                    <button data-title="adiddas copa " data-price="164999" class="add-to-cart-button btn-primary">Agregar al Carrito</button>
+                </div>
+                <div class="product-card" id="product1">
+                    <img src="./imagenes/puma ns.webp" alt="">
+                    <h3>puma ns</h3>
+                    <p>$195.999</p>
+                    <button data-title="Puma ns" data-price="195999" class="add-to-cart-button btn-primary">Agregar al Carrito</button>
+                </div>
+                <div class="product-card" id="product2">
+                    <img src="./imagenes/puma king.webp" alt="">
+                    <h3>Puma King</h3>
+                    <p>$99.999</p>
+                    <button data-title="Puma King " data-price="99999" class="add-to-cart-button btn-primary">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div id="cartModal" class="cartModal">
+        <div class="cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="cartItems"></div>
+            <p>Total: <span id="cartTotal">$0.00</span></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 mass. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./js/clase6.js"></script>
+</body>
+</html>
